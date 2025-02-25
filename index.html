@@ -9,64 +9,89 @@
         body {
             font-family: Garamond, sans-serif;
             margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
         }
 
         header {
             background-color: #333;
             color: #fff;
-            padding: 20px;
+            padding: 15px;
             text-align: center;
-            font-size: 20px;
+            font-size: 18px;
         }
 
-        h1 {
+        h1, h2 {
             margin: 0;
         }
 
-        /* unvisited link */
-        a:link {
-            color: rgb(0, 0, 0);
+        a {
+            text-decoration: none;
         }
 
-        /* visited link */
+        a:link {
+            color: black;
+        }
+
         a:visited {
             color: blue;
         }
 
-        /* mouse over link */
         a:hover {
             color: green;
         }
 
-        /* selected link */
         a:active {
             color: gray;
         }
 
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 15px;
+            background: white;
+        }
+
         section {
-            margin: 0px;
-            border: 0px solid black;
-            background-color: light-grey;
-            font-size: 20px;
-            padding-left: 2em;
-            padding-right: 2em;
+            background: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
 
-        div.a {
-            padding-left: 2em;
-        }
-
-        div.b {
+        .center {
             text-align: center;
         }
 
-        div.c {
-            padding-left: 15em;
-            padding-right: 15em;
+        ul {
+            padding-left: 20px;
         }
 
-        div.d {
-            padding-left: 2em;
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 25px;
+            height: 25px;
+            vertical-align: middle;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                font-size: 16px;
+            }
+            header {
+                font-size: 16px;
+            }
+            .container {
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -74,173 +99,54 @@
 <body>
     <header>
         <h1>Gary LaBranche</h1>
-        <p>Portland, OR
-        <p>
-            <br> <a href="http://linkedin.com/in/garylabranche" target=”_blank”><img src="linkedin.png" width="25"
-                    height="25""></a>
-        </p>
+        <p>Portland, OR | <a href="http://linkedin.com/in/garylabranche" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a></p>
     </header>
-    <div class=" c">
-                <section>
-                    <center>
-                        <h2>TECHNICAL DIRECTOR/OPERATIONS</h2>
-                        <p>
-                            Accomplished Support Professional with extensive experience in global, regional, and remote
-                            environments. Possessing a deep understanding of both technical systems and customer needs,
-                            I excel in bridging the gap between departments as a trusted liaison. My adeptness in
-                            Business
-                            Management and Leadership allows me to effectively address complex consumer concerns,
-                            consistently
-                            delivering solutions with patience and efficiency. Known for my collaborative approach, I
-                            have a proven
-                            track record of successfully resolving support challenges through teamwork and
-                            client-focused
-                            strategies. Seeking opportunities in both local and remote settings to leverage my skills
-                            and contribute
-                            to organizational success.
-                        </p>
-                    </center>
-                </section>
-                <section>
-                    <div class="b">
-                        <h2>SELECTED SKILLS | ACHIEVEMENTS</h2>
-                    </div>
-                    <p>
-                        <li>Develop and execute comprehensive plans for network operations, including strategic
-                            staffing, training programs, and implementation strategies.</li>
-                        <li>Take ownership of performance metrics, support of process changes, and generating insightful
-                            reports
-                            to drive organizational success within the organization.</li>
-                        <li>Lead efforts to coordinate support initiatives across diverse business units, optimizing
-                            support functions to enhance operational efficiency.</li>
-                        <li>Bring extensive expertise in managing multi-national business relations, navigating customs
-                            regulations, providing legal support, managing warranties, and ensuring compliance with
-                            consumer laws to foster global success.</li>
-                    </p>
-                    </div>
-                </section>
-                </div>
-                <div class="c">
-                    <section>
-                        <div class="b">
-                            <h2>EXPERIENCE</h2>
-                        </div>
 
-                        <strong>Support Manager – Avanti Market, Advana, and 365 Products | 365 Retail </strong>
-                        <br><a href="https://365retailmarkets.com/contact-us/" target=”_blank”
-                            style="text-decoration:none;">365
-                            Retail Markets – MI</a>
-                        <br><i>2021 – Present</i>
-                        <p>As a Support Manager, I lead a dynamic SaaS support department spanning multiple regions and product lines, ensuring seamless operations and exceptional customer experiences. My role encompasses:
-                        <div class="d">
-                            <li><strong>Leadership and Operations:</strong> Oversee the Avanti, Advana, and 365 support teams, coordinating cross-regional activities and aligning resources for operational excellence and timely project execution.</li>
-                            <li><strong>Performance and Compliance:</strong> Foster a culture of continuous improvement by developing performance evaluation frameworks, enforcing support policies, and ensuring security and compliance standards.</li>
-                            <li><strong>Resource and Process Optimization:</strong> Partner with development teams to provide data-driven insights for efficient resource allocation, implement standardized processes, and enhance customer satisfaction.</li>
-                            <li><strong>Talent and Customer Management:</strong> Lead talent acquisition efforts, develop cloud-based operations, oversee multi-channel customer interactions, and manage comprehensive training programs. Drive employee career development initiatives by implementing mentorship programs, skill-building workshops, and clear growth pathways to enhance team performance and retention.</li>
-                            <li><strong>Stakeholder Engagement and Strategic Representation:</strong> Serve as the key point of contact for incident management and escalations, ensuring transparency during system outages while contributing to strategic planning and product enhancements.</li>
-                            <li><strong>Technical Expertise & Data Management:</strong> Utilize PowerShell and SQL to optimize support operations, troubleshoot issues, and collaborate with engineering and DevOps teams. Access and query data warehouses to generate internal and external reports, supporting business intelligence and decision-making.</li>
-                            <li><strong>AI Implementation & Testing:</strong> Assist in testing AI-driven products for chat and email responses, ensuring accurate automation, improving customer interactions, and refining AI models for enhanced support efficiency. Through active participation in daily standups, strategic planning, and continuous improvement initiatives, I drive the direction of the support department, ensuring alignment with business objectives and delivering world-class support experiences.</li>
-                        </div>
-                        <br>Through my active involvement in daily standups, strategic planning sessions, and continuous
-                        improvement initiatives, I drive the direction of the support department, ensuring alignment
-                        with organizational goals and delivering unparalleled support experiences to our customers.
-        </p>
-
-        <strong>Sr. Technical Support Supervisor </strong>
-        <br><a href="https://365retailmarkets.com/contact-us/" target=”_blank” style="text-decoration:none;">365
-            Retail Markets – MI</a> (formerly Avanti Markets)
-        <br><i>2018 – 2021</i>
-
-        <p>As the Sr. Technical Support Supervisor for Avanti Market products, I oversaw a dynamic SaaS support
-            department spanning multiple regions and products. My responsibilities encompass a wide range of tasks
-            aimed at ensuring efficient operations and exceptional customer satisfaction. My role encompassed
-            strategic leadership, operational oversight, and continuous improvement initiatives aimed at delivering
-            exceptional support services and ensuring customer satisfaction for Avanti Market products across
-            diverse regions and product lines.
-        <div class="d">
-            <li><strong>Project Management and Process Improvement:</strong> Develop tracking systems to monitor
-                progress and ensure timely completion of project milestones. Continuously implement new processes to
-                enhance forecasting accuracy and support capabilities.</li>
-            <li><strong>Product Ownership and Implementation:</strong> Take ownership of Tymeshift and Zendesk products,
-                oversee their implementation, and optimize their usage within the support department.</li>
-            <li><strong>Budget Management and Resource Allocation:</strong> Manage the support department budget and
-                allocate resources effectively to support operations. Provide detailed statistical analysis to identify
-                resource needs and address technical issues.</li>
-            <li><strong>Policy Development and Compliance:</strong> Develop and implement policies and procedures for
-                performance management, disciplinary actions, and security compliance to maintain network security.</li>
-            <li><strong>Recruitment and Workforce Management:</strong> Source and recruit talent to meet evolving
-                support needs. Manage workforce processes such as payroll and time off management.</li>
-            <li><strong>User Acceptance Testing and Standardization:</strong> Integrate processes for User Acceptance
-                Testing and develop standard response templates to streamline technical support instructions.</li>
-            <li><strong>Voice of the Customer and Stakeholder Management:</strong> Establish processes to measure brand
-                loyalty through Voice of the Customer initiatives. Drive communication with stakeholders during system
-                outages and maintenance.</li>
-
-        </div>
-        <br>In summary, my role encompassed strategic leadership, operational oversight, and continuous improvement
-        initiatives aimed at delivering exceptional support services and ensuring customer satisfaction for Avanti
-        Market products across diverse regions and product lines.</p>
-
-
-        <strong>Global Technical Team Lead </strong>
-        <br><a href="https://www.seagate.com/contacts/" target=”_blank” style="text-decoration:none;">Seagate Technology
-            – CA, OK</a>
-        <br><i>2015 – 2018</i>
-
-        <p>As the Team Lead for the LaCie/Seagate support team covering AMER, EMEA, and APAC regions, I take on the
-            responsibility of providing escalation support across tiers 1 to 3, encompassing a wide spectrum of
-            technical and business domains. Here's a breakdown of my key responsibilities: </p>
-        <div class="d">
-
-            <li><strong>Training and Talent Management:</strong> Spearhead training and onboarding of new team members,
-                ensuring familiarity with company procedures. Develop a new hire knowledge quiz and participate in
-                interviews to select candidates.</li>
-            <li><strong>Process Optimization and Monitoring:</strong> Develop tracking systems using advanced Google
-                scripting for efficient monitoring of team shipments. Monitor monthly goal performance plans to track
-                agent progression.</li>
-            <li><strong>Customer Feedback and Escalation Handling:</strong> Lead the Voice of the Customer team,
-                overseeing feedback tracking across products. Handle complex escalations, performing root cause analysis
-                for effective resolution.</li>
-            <li><strong>Team Coordination and Guidance:</strong> Conduct weekly team meetings to disseminate leadership
-                updates and align focus with business objectives. Provide guidance and mentorship to support level
-                employees and front-line agents.</li>
-            <li><strong>Cross-functional Collaboration and Escalation Support:</strong> Establish communication with
-                design engineering and software development teams to address issues. Offer secondary escalation support
-                to ensure timely resolution of customer issues.</li>
-            <li><strong>Knowledge Management and Improvement:</strong> Maintain internal Google wiki knowledgebase sites
-                for knowledge sharing. Monitor employee performance and provide constructive feedback for continuous
-                improvement.</li>
-
-        </div>
-        <br>In summary, as the Team Lead, I play a pivotal role in driving the success of the LaCie/Seagate
-        support team by fostering a collaborative environment, optimizing processes, and providing effective
-        leadership and support across multiple regions.</p>
-
-        <div class="b">
-            <h2>TECHNICAL EXPERTISE</h2>
-        </div>
-        <div class="d">
-            <li><strong>Programming & Development:</strong> PHP, MySQL, JavaScript, jQuery, CSS, HTML5, Java, CMS platforms
-            <li><strong>Database Management:</strong> SQL Server Management Studio (SSMS), MySQL
-            <li><strong>Operating Systems:</strong> Windows, macOS, Linux, Unix (including server environments)
-            <li><strong>Hardware & Infrastructure:</strong> PC & Apple systems, printers, projectors, USB/Thunderbolt peripherals, Nytro Flash Accelerator Cards, RAID controllers (including Fibre), PBX system administration
-            <li><strong>Tools & Platforms:</strong> WordPress, Drupal, Google Sites, Microsoft Office Suite, Google Workspace, Storview Management Software
-            <li><strong>Project & Workflow Management:</strong> JIRA, Zendesk, Azure DevOps (ADO), SEO, project management techniques             
-        </div>
-        <br>
-
-        <div class="b">
-            <h2>EDUCATION | CERTIFICATION</h2>
-        </div>
-        <center>
-            B.S., Business Management - Minor in Economics - Portland State University<br>
-            A.A.S., Website Development and Design - Portland Community College
-        </center>
+    <div class="container">
+        <section class="center">
+            <h2>Technical Director / Operations</h2>
+            <p>Accomplished Support Professional with extensive experience in global, regional, and remote environments...</p>
         </section>
 
-        <footer>
-            <p>&copy; 2024 Gary LaBranche. All rights reserved.</p>
-        </footer>
+        <section>
+            <h2 class="center">Selected Skills | Achievements</h2>
+            <ul>
+                <li>Develop and execute comprehensive plans for network operations...</li>
+                <li>Take ownership of performance metrics and support process changes...</li>
+                <li>Lead efforts to coordinate support initiatives across diverse business units...</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="center">Experience</h2>
+            <strong>Support Manager – Avanti Market, Advana, and 365 Products | 365 Retail</strong><br>
+            <a href="https://365retailmarkets.com/contact-us/" target="_blank">365 Retail Markets – MI</a>
+            <br><i>2021 – Present</i>
+            <ul>
+                <li><strong>Leadership & Operations:</strong> Oversee the Avanti, Advana, and 365 support teams...</li>
+                <li><strong>Performance & Compliance:</strong> Foster a culture of continuous improvement...</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="center">Technical Expertise</h2>
+            <ul>
+                <li><strong>Programming & Development:</strong> PHP, MySQL, JavaScript, jQuery, CSS, HTML5, Java</li>
+                <li><strong>Database Management:</strong> SQL Server Management Studio (SSMS), MySQL</li>
+                <li><strong>Operating Systems:</strong> Windows, macOS, Linux, Unix</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="center">Education | Certification</h2>
+            <p class="center">B.S., Business Management - Minor in Economics - Portland State University</p>
+            <p class="center">A.A.S., Website Development and Design - Portland Community College</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Gary LaBranche. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
